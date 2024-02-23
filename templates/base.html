@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Мой проект
+        {% endblock %}
+    </title>
+<link type="text/css" href="{% static 'css/style.css' %}" rel="stylesheet" />
+</head>
+<body>
+    {% block content %}
+        <p>Скоро тут появится контент...</p>
+    {% endblock %}
+    <footer><br>Базовый шаблон проекта @</footer>
+</body>
+</html>
